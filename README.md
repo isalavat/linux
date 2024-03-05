@@ -12,11 +12,22 @@
 - top - monitorng procesess in real time
 </pre>
 
-##Files system Structture and its Description
+## Files system Structture and its Description
 
 <pre>
 boot,
 root - root user home directory
 dev - system devices
 etc - Config files
+/bin -> /usr/bin - everyday user commands
+/sbin -> /usr/sbin - System/filesystem commands
+/opt -Optional add-on apllication (Not partn of OS apps)
+/proc - Running process (only exist inj Memory)
+/lib -> usr/lib - C programming library files needed by commands and apps
+/tmp - Direcriy for temporary files
+/home - Directory for user
+/var - System logs
+/run - temporary runtime files like PID
+/mnt - To mount external filesystem (e.g. NFS)
+/media - For cdrom mounts
 </pre>
