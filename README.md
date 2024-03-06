@@ -12,7 +12,7 @@
 - top - monitorng procesess in real time
 </pre>
 
-## Files system Structture and its Description
+## 44. Files system Structture and its Description
 
 <pre>
 boot,
@@ -30,4 +30,14 @@ etc - Config files
 /run - temporary runtime files like PID
 /mnt - To mount external filesystem (e.g. NFS)
 /media - For cdrom mounts
+</pre>
+
+## 45. File System Navigation Commands
+
+<pre>
+cd - change directory
+pwd - print working directory
+ls -l (ls -ltr) - listing the content of the directory
+-rw-r.... - minus symbol in the begining means a filed
+drwxr - d means directory
 </pre>
