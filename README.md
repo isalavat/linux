@@ -51,7 +51,7 @@ lrwxrwxrwx - link
 ## 47. Linux File Types
 
 <pre>
-File Symbol     |     Meannig | 
+|File Symbol     |     Meannig | 
 |---------------|:-------------:|
 | -             | Regular file|
 | d             | Directory   |
