@@ -50,14 +50,12 @@ lrwxrwxrwx - link
 
 ## 47. Linux File Types
 
-<pre>
-|File Symbol     |     Meannig | 
-|---------------|:-------------:|
-| -             | Regular file|
-| d             | Directory   |
-| l             | link        |
-| c             | Special file or device|
-| s             | socket       |
-| p             | Name pipe |
-| b             | Block device|
-</pre>
+| File Symbol |        Meannig         |
+| ----------- | :--------------------: |
+| -           |      Regular file      |
+| d           |       Directory        |
+| l           |          link          |
+| c           | Special file or device |
+| s           |         socket         |
+| p           |       Name pipe        |
+| b           |      Block device      |
