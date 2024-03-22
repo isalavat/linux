@@ -37,7 +37,27 @@ etc - Config files
 <pre>
 cd - change directory
 pwd - print working directory
-ls -l (ls -ltr) - listing the content of the directory
--rw-r.... - minus symbol in the begining means a filed
+ls -l (ls -ltr) - listing the content of the directory with their properties
+-rw-r.... - minus symbol in the begining means a file
 drwxr - d means directory
+</pre>
+
+## 46. Linux File or Directory Properties
+
+<pre>
+lrwxrwxrwx - link
+</pre>
+
+## 47. Linux File Types
+
+<pre>
+File Symbol     |     Meannig | 
+|---------------|-------------|
+| -             | Regular file|
+| d             | Directory   |
+| l             | link        |
+| c             | Special file or device|
+| s             | socket       |
+| p             | Name pipe |
+| b             | Block device|
 </pre>
