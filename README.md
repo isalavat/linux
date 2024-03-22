@@ -52,7 +52,7 @@ lrwxrwxrwx - link
 
 <pre>
 File Symbol     |     Meannig | 
-|---------------|-------------|
+|---------------|:-------------:|
 | -             | Regular file|
 | d             | Directory   |
 | l             | link        |
