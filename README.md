@@ -59,3 +59,29 @@ lrwxrwxrwx - link
 | s           |         socket         |
 | p           |       Name pipe        |
 | b           |      Block device      |
+
+## 48. What is root?
+
+<pre>
+There 3 types of root:
+
+1. Root account
+2. Root directory - /
+3. Root home directory - the root user accout directory located in /root
+</pre>
+
+## 49. Changing Password
+
+<pre>
+Command = passwd userid (old, new, confirm new)
+</pre>
+
+## 50. Absolute and Relative Paths
+
+<pre>
+Absolute path cd /var/log
+Relative path cd log
+/ - root directory
+
+su - : root user
+</pre>
