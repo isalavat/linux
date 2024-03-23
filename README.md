@@ -85,3 +85,22 @@ Relative path cd log
 
 su - : root user
 </pre>
+
+## 51. Creating Files and Directories (touch, cp, vi, mkdir)
+
+<pre>
+  Creating files
+    touch
+    cp (copy command)
+    vi (creates a file and opens it in a editor)
+      :wq!
+  
+  Creating Diretories
+    mkdir
+</pre>
+
+## 52. Copying directories
+
+<pre>
+  cp -R source destination
+</pre>
