@@ -103,4 +103,34 @@ su - : root user
 
 <pre>
   cp -R source destination
+  mv file.txt /home/username/documents - moving file to detination folder
+</pre>
+
+## 53. Finding files and directories (find, locate)
+
+<pre>
+  find . -name "kramer"  - . is a relative path pointing to current directory
+  find / -name "ifcfg-enp0s3"
+  Help - man find 
+
+  
+</pre>
+
+## 54. Difference Between Find and Locate Commands
+
+<pre>
+  locate example.txt
+  
+  The locate command in Unix-like operating systems is a quick and efficient way to search for files by their name. Unlike the find command, which searches the file system in real-time, locate searches a database of indexed file paths, making it much faster for finding files when you know their names or partial names. However, because locate relies on a database that is periodically updated (usually once a day via a cron job), it may not always reflect the most current state of the file system.
+
+  sudo updatedb  - updating db
+
+</pre>
+
+## 55. WildCards (\*, ?, ^, [])
+
+<pre>
+  touch abcd{1..9}-xyz > creates 9 files with a given wildcard
+  rm a* > removing all files starting with "a"
+  ls -l ?bcd* > listing files with a given wildcard 
 </pre>
