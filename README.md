@@ -121,7 +121,13 @@ su - : root user
 <pre>
   locate example.txt
   
-  The locate command in Unix-like operating systems is a quick and efficient way to search for files by their name. Unlike the find command, which searches the file system in real-time, locate searches a database of indexed file paths, making it much faster for finding files when you know their names or partial names. However, because locate relies on a database that is periodically updated (usually once a day via a cron job), it may not always reflect the most current state of the file system.
+  The locate command in Unix-like operating systems is a quick and efficient way to 
+  search for files by their name. Unlike the find command, which searches the file 
+  system in real-time, locate searches a database of indexed file paths, making it 
+  much faster for finding files when you know their names or partial names. However, 
+  because locate relies on a database that is periodically updated (usually once a 
+  day via a cron job), it may not always reflect the most current state of the file 
+  system.
 
   sudo updatedb  - updating db
 
@@ -133,4 +139,22 @@ su - : root user
   touch abcd{1..9}-xyz > creates 9 files with a given wildcard
   rm a* > removing all files starting with "a"
   ls -l ?bcd* > listing files with a given wildcard 
+</pre>
+
+## 56. Soft and Hard Links (ln)
+
+<pre>
+  inode - Pointer or number of a file on the hard disk
+  Soft Link - Link will be removed if file is removed or renamed
+  Hard Link - Deleting renaming or moving the original file will not affect the hard link
+    ln or ln -s (for a soft link)
+    lrwxr... > l stands for a link
+  
+  echo "Hulk is super" > hulk: This command uses echo to print the string "Hulk is super" and then redirects the output (>) into a file named hulk. If the file hulk already exists, it will be overwritten without warning. If the file doesn't exist, it will be created.
+
+  cat hulk: This command uses cat to display the contents of the file named hulk on 
+  the terminal. If the previous command was executed successfully, this command will 
+  output "Hulk is super" to the screen.
+
+  ls -li > listing files including the information about inode
 </pre>
