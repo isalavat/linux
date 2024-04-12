@@ -158,3 +158,42 @@ su - : root user
 
   ls -li > listing files including the information about inode
 </pre>
+
+## 60. Linux Command Syntax
+
+<pre>
+  rm -f filename > deleting a file
+  rm -r foldername > deleting a folder
+  man ls > listing command manual
+  
+</pre>
+
+## 61. Files and Directory (chmod)
+
+<pre>
+  3 types of permissions
+   r - read
+   w - write
+   x - execute
+  each permission (rwx) can be controlled at three levels:
+    u - user = yourself
+    g - group = can be people in the same project
+    o - other = everyone on the system 
+  ls -l = it lists permissions
+    - rwxrwxrwx
+  ls = lists files and dirs only
+  
+  Adding Permissions
+
+  Add execute permission for the owner:
+   chmod u+x filename
+  Add read and write permissions for the group:
+    chmod g+rw filename
+  Remove execute permission from others:
+    chmod o-x filename
+  
+  Setting Permissions
+  Set the permissions so that the owner can read and write, the group can read, and 
+  others have no permissions:
+    chmod u=rw,g=r,o= filename  
+</pre>
