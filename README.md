@@ -168,7 +168,7 @@ su - : root user
   
 </pre>
 
-## 61. Files and Directory (chmod)
+## 61. Files and Directory Permission (chmod)
 
 <pre>
   3 types of permissions
@@ -196,4 +196,38 @@ su - : root user
   Set the permissions so that the owner can read and write, the group can read, and 
   others have no permissions:
     chmod u=rw,g=r,o= filename  
+</pre>
+
+## 62. File Permissions Using Numeric Mode
+
+<pre>
+  chmod ugo+r FILE
+    OR
+  chmod 444 FILE
+
+  # File Permission Codes
+
+This table explains the numeric (octal) permission codes for UNIX and Linux systems.
+
+| Octal Value | Permissions | Description                              |
+|-------------|-------------|------------------------------------------|
+| 0           | ---         | No permission                            |
+| 1           | --x         | Execute only                             |
+| 2           | -w-         | Write only                               |
+| 3           | -wx         | Write and execute                        |
+| 4           | r--         | Read only                                |
+| 5           | r-x         | Read and execute                         |
+| 6           | rw-         | Read and write                           |
+| 7           | rwx         | Read, write, and execute                 |
+
+## Usage
+
+- **Owner**, **Group**, and **Others** each have one of these octal values.
+- Combine these values to set comprehensive permissions for a file or directory.
+- Example: `chmod 755 filename` sets the permissions to read, write, and execute for the owner, and read and execute for the group and others.
+
+Remember to carefully manage permissions to protect system security.
+
+- chmod 764 FILE
+- online calculators can be used as well
 </pre>
