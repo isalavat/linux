@@ -231,3 +231,17 @@ Remember to carefully manage permissions to protect system security.
 - chmod 764 FILE
 - online calculators can be used as well
 </pre>
+
+## 63. File Permissions Using Numeric Mode
+
+<pre>
+ - There are 2 owners of a file or directory: user and group
+ - Command to change file ownership
+    - chown and chgrp
+      - chown changes the ownership of a file
+      - chgrp changes the group ownership of a file
+- Recursive ownership change option (Cascade)
+   - R
+- chown root lisa > changing the owner
+
+</pre>
