@@ -245,3 +245,26 @@ Remember to carefully manage permissions to protect system security.
 - chown root lisa > changing the owner
 
 </pre>
+
+## 64. Access Control List
+
+<pre>
+Access Control Lists (ACLs) provide a more granular way to assign permissions on a file or directory than the traditional Unix permission system (owner, group, others). ACLs allow you to specify more detailed access rights for multiple users and groups to files and directories.
+
+1) To add permission for user
+setfacl -m u:user:rwx /path/to/file
+
+2) To add permissions for a group
+setfacl -m g:group:rw /path/to/file
+
+3) To allow all files or directories to inherit ACL entries from the directory it is within
+setfacl -dm "entry" /path/to/dir
+
+4) To remove a specific enttry
+setfacl -x u:user /path/to/file (for a specific user)
+
+5) To remove all entries
+ setfacl -b path/to/file (for all users)
+
+6) getfacl tx
+</pre>
