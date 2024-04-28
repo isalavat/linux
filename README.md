@@ -268,3 +268,15 @@ setfacl -x u:user /path/to/file (for a specific user)
 
 6) getfacl tx
 </pre>
+
+## 65. Help Commands
+
+<pre>
+There are 3 types of help commands
+- whatis command
+    whatis cd
+- command --help
+    ls --help
+- man command
+    man ls
+</pre>
