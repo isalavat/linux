@@ -280,3 +280,13 @@ There are 3 types of help commands
 - man command
     man ls
 </pre>
+
+## 67 Adding text to files
+
+<pre>
+3 simple ways to add text to a file
+- vi
+- Redirect command output > or >>
+- echo > (override) or >> (append) 
+    example: ls -ltr >> jerry (outputing in the file jerry)
+</pre>
