@@ -290,3 +290,21 @@ There are 3 types of help commands
 - echo > (override) or >> (append) 
     example: ls -ltr >> jerry (outputing in the file jerry)
 </pre>
+
+## 68. Input and Output Redirects (>, >>, <, stdin, stdout and stderr)
+
+<pre>
+There are 3 redirects in Linux
+ 1) Standard  input (stdin) and it has file descriptor number as 0
+    'cat < listings'
+    'mail -s "Office memo" allusers@abc.com' < memolletter
+ 2) Standard output (stdout) and it has file descriptor number as 1
+    > override
+    >> append
+    "echo "Hello world"" >> file" redirecting to the file
+ 3) Standard error (stderr) and it has file descriptor number as 2
+    "ls -l /root 2> errorfile"
+    "telnet localhost 2> errorfile"
+
+ "ls -la" lists all the files including hidden ones
+ </pre>
